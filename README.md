@@ -19,6 +19,21 @@
 
 ---
 
+
+## 🛡️ GitHub Pages: SMS Güvenlik Merkezi
+
+Bu depoda ayrıca kötüye kullanımı kolaylaştırmayan, SMS bombing/taciz saldırılarına karşı korunma ve bildirim adımlarını anlatan güvenli bir GitHub Pages sayfası bulunur. Statik sayfa `docs/` klasöründedir ve GitHub Pages ayarlarında kaynak olarak `main` branch + `/docs` seçilerek yayınlanabilir.
+
+Yerelde önizlemek için:
+
+```bash
+python3 -m http.server 8000 --directory docs
+```
+
+Ardından `http://localhost:8000` adresini açın.
+
+---
+
 ## 🎯 What is MetaSort?
 
 **MetaSort** is your all-in-one solution for organizing Google Photos Takeout exports (or any messy media folder). It's lightning-fast, user-friendly, and works on both macOS and Windows.
