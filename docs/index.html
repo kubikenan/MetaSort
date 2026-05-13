@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SMS bombing saldırılarına karşı korunma, kanıt toplama ve operatöre bildirme için güvenli GitHub Pages rehberi."
+    />
+    <title>SMS Güvenlik Merkezi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Ana gezinme">
+        <a class="brand" href="#top" aria-label="SMS Güvenlik Merkezi ana sayfa">
+          <span class="brand__mark" aria-hidden="true">🛡️</span>
+          <span>SMS Güvenlik Merkezi</span>
+        </a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+          Menü
+        </button>
+        <div id="menu" class="nav__links">
+          <a href="#korunma">Korunma</a>
+          <a href="#kanit">Kanıt</a>
+          <a href="#bildirim">Bildirim</a>
+          <a href="#marka-taklidi">Marka taklidi</a>
+          <a class="button button--small" href="#checklist">Kontrol listesi</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero__content">
+        <p class="eyebrow">Taciz amaçlı SMS saldırılarına karşı güvenli rehber</p>
+        <h1>SMS bombardımanına maruz kaldığınızda sakin kalın, kanıtı koruyun, doğru kanallara bildirin.</h1>
+        <p class="hero__lead">
+          Bu sayfa herhangi bir SMS gönderme veya otomasyon aracı içermez. Amacı, kullanıcıların spam/taciz
+          saldırılarını azaltmasına, kayıt altına almasına ve operatör ya da yetkili kurumlara güvenli şekilde
+          bildirmesine yardımcı olmaktır.
+        </p>
+        <div class="hero__actions">
+          <a class="button" href="#checklist">Hemen başla</a>
+          <a class="button button--ghost" href="#bildirim">Nereye bildirmeli?</a>
+        </div>
+        <div class="trust-card" role="note">
+          <strong>Etik kullanım notu:</strong> Bu proje kötüye kullanımı kolaylaştıran kod, API entegrasyonu,
+          hedef listeleme, şirket taklidi veya otomatik mesaj gönderme mantığı barındırmaz.
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section section--grid" aria-labelledby="korunma-title" id="korunma">
+        <div>
+          <p class="eyebrow">1. Adım</p>
+          <h2 id="korunma-title">Saldırıyı azaltmak için hızlı önlemler</h2>
+          <p>
+            Önce cihazınızdaki bildirim yoğunluğunu düşürün ve numaranızı korumaya alın. Aşağıdaki öneriler,
+            farklı telefon ve operatörlerde değişiklik gösterebilir.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <span aria-hidden="true">🔕</span>
+            <h3>Bildirimleri sessize alın</h3>
+            <p>Mesaj uygulamanızda bilinmeyen gönderenleri filtreleyin ve geçici olarak sessiz moda alın.</p>
+          </article>
+          <article class="card">
+            <span aria-hidden="true">🚫</span>
+            <h3>Tekrarlayan gönderenleri engelleyin</h3>
+            <p>Aynı numara veya kısa koddan gelen iletileri engelleyerek yeni iletileri ayrı bir klasöre taşıyın.</p>
+          </article>
+          <article class="card">
+            <span aria-hidden="true">🔐</span>
+            <h3>Hesap güvenliğini kontrol edin</h3>
+            <p>SMS doğrulaması kullanan önemli hesaplarda güçlü parola ve uygulama tabanlı 2FA tercih edin.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="kanit-title" id="kanit">
+        <p class="eyebrow">2. Adım</p>
+        <h2 id="kanit-title">Kanıtları düzenli şekilde toplayın</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span>01</span>
+            <div>
+              <h3>Ekran görüntüsü alın</h3>
+              <p>Tarih, saat, gönderen ve mesaj içeriği görünecek şekilde örnek ekran görüntüleri kaydedin.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <span>02</span>
+            <div>
+              <h3>Yoğunluğu not edin</h3>
+              <p>Yaklaşık kaç mesaj geldiğini, ilk ve son mesaj saatini, etkilenen hesapları not alın.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <span>03</span>
+            <div>
+              <h3>Kişisel verileri paylaşmayın</h3>
+              <p>Destek talebi açarken yalnızca gerekli bilgileri paylaşın; kimlik, parola veya doğrulama kodu göndermeyin.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--accent" aria-labelledby="bildirim-title" id="bildirim">
+        <div>
+          <p class="eyebrow">3. Adım</p>
+          <h2 id="bildirim-title">Doğru yere bildirin</h2>
+          <p>
+            Operatörünüzün spam/taciz hattına başvurun. Tehdit, şantaj, kimlik avı veya maddi zarar riski varsa
+            yerel kolluk kuvvetleri ya da siber suç birimleriyle iletişime geçin.
+          </p>
+        </div>
+        <form class="report-builder" id="report-form">
+          <h3>Güvenli bildirim taslağı oluştur</h3>
+          <label>
+            Etkilenen telefon numarası etiketi
+            <input name="label" type="text" placeholder="Örn. kişisel hat / iş hattı" maxlength="60" />
+          </label>
+          <label>
+            İlk mesaj zamanı
+            <input name="started" type="datetime-local" />
+          </label>
+          <label>
+            Yaklaşık mesaj sayısı
+            <input name="count" type="number" min="1" max="99999" placeholder="Örn. 120" />
+          </label>
+          <label>
+            Kısa açıklama
+            <textarea name="notes" rows="4" placeholder="Tehdit, bağlantı, tekrar eden kısa kod gibi güvenli detayları yazın."></textarea>
+          </label>
+          <button class="button" type="submit">Taslak oluştur</button>
+          <output id="report-output" class="report-output" aria-live="polite"></output>
+        </form>
+      </section>
+
+
+      <section class="section section--warning" aria-labelledby="marka-title" id="marka-taklidi">
+        <div>
+          <p class="eyebrow">Kimlik avı uyarısı</p>
+          <h2 id="marka-title">Sahte doğrulama kodu ve şirket taklidine dikkat edin</h2>
+          <p>
+            Banka, e-ticaret, kargo, operatör veya kamu kurumu gibi görünen SMS'ler kimlik avı amacıyla
+            gönderilebilir. Gerçek şirketler sizden parola, tek kullanımlık kod veya kart bilgisi istemez.
+          </p>
+        </div>
+        <div class="warning-grid">
+          <article class="warning-card">
+            <h3>Mesajdaki bağlantıya tıklamayın</h3>
+            <p>Hesabınızı kontrol etmeniz gerekiyorsa uygulamayı kendiniz açın veya adresi tarayıcıya elle yazın.</p>
+          </article>
+          <article class="warning-card">
+            <h3>Doğrulama kodunu paylaşmayın</h3>
+            <p>SMS ile gelen kodu isteyen kişi destek görevlisi gibi konuşsa bile kodu, parolayı veya kart bilgisini vermeyin.</p>
+          </article>
+          <article class="warning-card">
+            <h3>Resmi kanaldan doğrulayın</h3>
+            <p>Şüpheli mesajı şirketin resmi web sitesi, mobil uygulaması veya kart arkasındaki telefon numarası üzerinden teyit edin.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="checklist-title" id="checklist">
+        <p class="eyebrow">Kontrol listesi</p>
+        <h2 id="checklist-title">Güvenli müdahale kontrol listesi</h2>
+        <div class="checklist" data-checklist>
+          <label><input type="checkbox" /> Bilinmeyen gönderen bildirimlerini sessize aldım.</label>
+          <label><input type="checkbox" /> Tekrarlayan numara/kısa kodları engelledim.</label>
+          <label><input type="checkbox" /> Kanıt ekran görüntülerini güvenli bir klasöre kaydettim.</label>
+          <label><input type="checkbox" /> Operatöre bildirim taslağı hazırladım.</label>
+          <label><input type="checkbox" /> Şüpheli bağlantılara tıklamadım ve kod paylaşmadım.</label>
+          <label><input type="checkbox" /> Marka taklidi şüphesi varsa resmi kanaldan doğruladım.</label>
+        </div>
+        <div class="progress" aria-label="Kontrol listesi ilerlemesi">
+          <div class="progress__bar" data-progress-bar></div>
+        </div>
+        <p class="progress__text" data-progress-text>0/6 tamamlandı</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>SMS Güvenlik Merkezi · Güvenli kullanım ve farkındalık sayfası</p>
+      <a href="#top">Yukarı dön</a>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
